@@ -242,5 +242,210 @@
                 "type": "dry"
             }
         ]
+    },
+    {
+        "name": "Rosemary Chicken with noodles and veggies",
+        "preparation": [
+            "Thin slices of chicken cut up and salt & peppered.",
+            "Clean zucchini and tomatoes.",
+            "Cut up zucchini into smaller pieces (usually: sliced into thin 1/4 moons).",
+            "Make sauce: mix together the rosemary, melted butter, garlic, chicken broth and lemon juice. ",
+            "Cook noodles."
+        ],
+        "cooking": [
+            "Heat a little oil in large round pan. Put chicken slices in oil for 2-3 minutes each side until a little brown on each side. Once browned, move to \"less heated\" side of pan.",
+            "Pour in sauce on \"more heated\" side of pan. Add corn starch to thicken up a bit and stir frequently. Stir in chicken regularly, but then move the chicken back to the \"less heated\", so solely the sauce is bubbling/thickening. Heat sauce for 3-5 minutes.",
+            "Heat a little oil in a different pan. Add the zucchini and tomatoes with a little salt and pepper. Cook for 3-5 minutes until they look done.",
+            "Add cooked noodles and cooked zucchini /tomato mix to the large pot with the chicken, and mix. Heat all together on medium heat for 5-7 minutes until the sauce has thickened to cover noodles and veggies."
+        ],
+        "ingredientList": [
+            {
+                "name": "chicken",
+                "amount": 1,
+                "unit": "count",
+                "type": "cold"
+            },
+            {
+                "name": "olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "type": "dry"
+            },
+            {
+                "name": "rosemary (dried)",
+                "amount": 0.5,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "butter (melted)",
+                "amount": 4,
+                "unit": "tbsp",
+                "type": "cold"
+            },
+            {
+                "name": "garlic",
+                "amount": 3,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "dry"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 3,
+                "unit": "tbsp",
+                "type": "produce"
+            },
+            {
+                "name": "zucchini",
+                "amount": 2,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "baby tomatoes pack",
+                "amount": 0.25,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "fave big noodles",
+                "amount": 0.25,
+                "unit": "count",
+                "type": "dry"
+            },
+            {
+                "name": "corn starch",
+                "amount": 0.125,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "salt&pepper (as needed)",
+                "amount": 0.6,
+                "unit": "tbsp",
+                "type": "dry"
+            }
+        ]
+    },
+    {
+        "name": "Turkey Chili",
+        "preparation": [
+            "Dice the pepper and onion",
+            "Brown the Turkey and drain",
+            "Rinse the Kidney and Black Bean"
+        ],
+        "cooking": [
+            "Place the brown turkey and all the ingredients in pot on medium heat and cook for at least hour for the favor."
+        ],
+        "ingredientList": [
+            {
+                "name": "Green Pepper",
+                "amount": 1,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Garlic cloves minced ",
+                "amount": 3,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Diced Tomatoes",
+                "amount": 48,
+                "unit": "ounce",
+                "type": "produce"
+            },
+            {
+                "name": "Red Kidney Beans",
+                "amount": 1,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Chicken or Vegetable Broth",
+                "amount": 2,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Olive Oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "type": "dry"
+            },
+            {
+                "name": "Chili Powder",
+                "amount": 2,
+                "unit": "tbsp",
+                "type": "dry"
+            },
+            {
+                "name": "Brown Sugar",
+                "amount": 1,
+                "unit": "tbsp",
+                "type": "dry"
+            },
+            {
+                "name": "Tabasco ",
+                "amount": 2,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "Basil",
+                "amount": 1,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "Garlic Powder",
+                "amount": 1,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "Cayenne Pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "Ground Turkey",
+                "amount": 32,
+                "unit": "ounce",
+                "type": "frozen"
+            },
+            {
+                "name": "Sweet onion",
+                "amount": 1,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Yellow Pepper",
+                "amount": 1,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Black Bean",
+                "amount": 2,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Oregeno",
+                "amount": 1,
+                "unit": "tsp",
+                "type": "produce"
+            }
+        ]
     }
 ]
