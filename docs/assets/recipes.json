@@ -1,0 +1,246 @@
+[
+    {
+        "name": "Chicken and Autumn Vegetables",
+        "preparation": [
+            "Cut cook and cut chicken into 1\" cubes",
+            "Cut vegetables as desired"
+        ],
+        "cooking": [
+            "Cook bacon until crisp and remove. Remove bacon grease with spoon and paper towel **optional** start rice cooker",
+            "Add vegetables, oil, salt, pepper and rosemary to pan. Cook until softened. Cut bacon into tiny pieces while waiting.",
+            "Add bacon and wine to pan. Cook until wine is 2/3 evaporated.",
+            "Add stock to partially cover. Cook until 2/3 evaporated.",
+            "Add creme frache and cooked chicken cubes. Cook until sauce thickened",
+            "Spread over rice or enjoy by itself"
+        ],
+        "ingredientList": [
+            {
+                "name": "chicken",
+                "type": "cold",
+                "unit": "ounce",
+                "amount": 16
+            },
+            {
+                "name": "bacon",
+                "type": "cold",
+                "unit": "count",
+                "amount": 4
+            },
+            {
+                "name": "leek",
+                "type": "produce",
+                "unit": "count",
+                "amount": 1
+            },
+            {
+                "name": "celery stalk",
+                "type": "produce",
+                "unit": "count",
+                "amount": 5
+            },
+            {
+                "name": "rice",
+                "type": "dry",
+                "unit": "cup",
+                "amount": 2
+            },
+            {
+                "name": "red wine",
+                "type": "dry",
+                "unit": "cup",
+                "amount": 0.5
+            },
+            {
+                "name": "chicken stock",
+                "type": "dry",
+                "unit": "quart",
+                "amount": 1
+            },
+            {
+                "name": "creme frache",
+                "type": "cold",
+                "unit": "gram",
+                "amount": 100
+            },
+            {
+                "name": "rosemary",
+                "type": "dry",
+                "unit": "tsp",
+                "amount": 1
+            },
+            {
+                "name": "olive oil",
+                "type": "dry",
+                "unit": "count",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Cheesy Breakfast Casserole",
+        "preparation": [
+            "Cut english muffins into 1 inch cubes",
+            "."
+        ],
+        "cooking": [
+            "Cook sausage according to directions. Cool slightly and cut in 1/4\" slices",
+            "In a greased 13 x 9\" pan layer half of the english muffin cubes and half of the cooked sausage. Repeat layers",
+            "Drizzle with butter and top with cheeses, red pepper, and onion.",
+            "In a large bowl combine eggs, milk, salt, and pepper. Pour over casserole. Sprinkle with bacon bits. Cover and refrigerate overnight.",
+            "Remove from fridge 30 minutes before baking. Uncover and bake at 350F for 45-50 minutes, or until a knife inserted in the center comes out clean.",
+            "Let stand 5 minutes before cutting"
+        ],
+        "ingredientList": [
+            {
+                "name": "breakfast sausage links",
+                "amount": 24,
+                "unit": "ounce",
+                "type": "cold"
+            },
+            {
+                "name": "english muffins",
+                "amount": 6,
+                "unit": "count",
+                "type": "dry"
+            },
+            {
+                "name": "melted butter",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "shredded cheddar cheese",
+                "amount": 1,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "shredded mozzarella cheese",
+                "amount": 1,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "chopped onion",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "produce"
+            },
+            {
+                "name": "red pepper chopped",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "produce"
+            },
+            {
+                "name": "eggs",
+                "amount": 1,
+                "unit": "count",
+                "type": "cold"
+            },
+            {
+                "name": "milk",
+                "amount": 2,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "salt",
+                "amount": 0.25,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "bacon bits",
+                "amount": 0.25,
+                "unit": "cup",
+                "type": "cold"
+            }
+        ]
+    },
+    {
+        "name": "Chicken with creamy basil and sun-dried tomato sauce",
+        "preparation": [
+            "Cut chicken into strips and season with salt and pepper.",
+            "Optional- cook noodles as base for recipe"
+        ],
+        "cooking": [
+            "Heat olive oil in large pan and sear chicken strips on each side, until browned.",
+            "Transfer chicken to a plate.",
+            "Add garlic and cook for 1 minute. Stir in thyme, red pepper flakes, chicken broth, and heavy cream.  Cook for 5 minutes, stirring often. ",
+            "Stir in sundried tomatoes and parmesan cheese. ",
+            "Return chicken to skillet and spoon sauce all over the chicken breasts.  Bake until chicken is cooked through",
+            "If using noodle base, spread chicken and sauce over.",
+            "Garnish with basil and grated parmesan cheese"
+        ],
+        "ingredientList": [
+            {
+                "name": "chicken breast",
+                "amount": 3,
+                "unit": "count",
+                "type": "cold"
+            },
+            {
+                "name": "olive oil",
+                "amount": 1,
+                "unit": "tbsp",
+                "type": "dry"
+            },
+            {
+                "name": "garlic clove",
+                "amount": 2,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "thyme",
+                "amount": 1,
+                "unit": "tsp",
+                "type": "produce"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 1,
+                "unit": "tsp",
+                "type": "dry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.75,
+                "unit": "cup",
+                "type": "dry"
+            },
+            {
+                "name": "heavy cream",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "sun-dried tomatoes (chopped)",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "dry"
+            },
+            {
+                "name": "parmesan cheese",
+                "amount": 0.5,
+                "unit": "cup",
+                "type": "cold"
+            },
+            {
+                "name": "basil",
+                "amount": 1,
+                "unit": "count",
+                "type": "produce"
+            },
+            {
+                "name": "Noodles",
+                "amount": 8,
+                "unit": "ounce",
+                "type": "dry"
+            }
+        ]
+    }
+]
