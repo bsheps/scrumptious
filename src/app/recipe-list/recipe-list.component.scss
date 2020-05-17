@@ -1,0 +1,34 @@
+.recipe-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    overflow: hidden;
+}
+.recipe-list-section{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    overflow: hidden;
+}
+.recipe-details-section{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    overflow: hidden;
+}
+.recipe-card{
+    margin: 7px;
+    overflow: auto;
+}
+.grocery-list-section{
+    grid-area: 1 / 1 / span 1 / span 2;
+    border: 1px solid #c2185b;
+    margin: 4px;
+    h2{
+        margin: 4px;
+    }
+    .mat-chip-list{
+        margin: 4px;
+    }
+    button{
+        margin: 4px;
+    }
+}

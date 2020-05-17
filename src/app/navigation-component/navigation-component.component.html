@@ -1,0 +1,20 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer class="drawer" mode="over" #drawer>
+        <ul>
+            <li style="cursor: pointer;" (click)="openRecipeList();drawer.toggle()">Recipes</li>
+            <li style="cursor: pointer;" (click)="openRecipeCreator();drawer.toggle()">Create recipe json</li>
+        </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <button mat-icon-button color="accent" (click)="drawer.toggle()" aria-label="Example icon button with a menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                Scrumptious
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <ng-template appMainContent></ng-template>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

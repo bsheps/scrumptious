@@ -1,0 +1,78 @@
+<mat-vertical-stepper [linear]="true" #stepper>
+    <mat-step [stepControl]="recipeNameGroup">
+            <ng-template matStepLabel>Name the recipe</ng-template>
+            <mat-form-field>
+                <mat-label>Recipe name</mat-label>
+                <input matInput [formControl]='recipeNameGroup' required>
+            </mat-form-field>
+            <div>
+                <button mat-stroked-button color="primary" matStepperNext>Next</button>
+            </div>
+    </mat-step>
+    <mat-step [stepControl]="recipeIngredientsGroup">
+        <ng-template matStepLabel>Build ingredients list</ng-template>
+        <form [formGroup]="recipeIngredientsGroup" *ngFor="let ingredient of recipeIngredientsGroup.controls;index as i">
+            <div class="form-input-area" [formArrayName]='i'>
+                <b>Ingredient {{i+1}}:</b>
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName='name'>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Amount</mat-label>
+                    <input matInput type="number" formControlName='amount'>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Unit</mat-label>
+                    <mat-select formControlName='unit'>
+                        <mat-option *ngFor="let unit of unitType" value="{{unit}}">{{unit}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Type</mat-label>
+                    <mat-select formControlName='type'>
+                        <mat-option *ngFor="let ingredient of ingredientType" value="{{ingredient}}">{{ingredient}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <button class="removal-button" mat-stroked-button color="error" (click)="removeIngredient(i)">Remove Ingredient</button>
+            </div>
+        </form>
+        <button mat-stroked-button color="primary" (click)="addIngredient()">Add Ingredient</button>
+        <button mat-stroked-button color="primary" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step [stepControl]="recipePreparationGroup">
+        <ng-template matStepLabel>Preparation Instructions</ng-template>
+        <form class="form-input-area" [formGroup]="recipePreparationGroup" *ngFor="let prep of recipePreparationGroup.controls;index as i">
+            <mat-form-field class="textarea-field">
+                <mat-label>Prep Item</mat-label>
+                <textarea matInput [formControlName]='i'></textarea>
+            </mat-form-field>
+            <button class="removal-button" mat-stroked-button color="error" (click)="removePreparation(i)">Remove Preparation</button>
+        </form>
+        <button mat-stroked-button color="primary" (click)="addPrepration()">Add Preparation Instruction</button>
+        <button mat-stroked-button color="primary" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step [stepControl]="recipeCookingGroup">
+        <ng-template matStepLabel>Cooking Instructions</ng-template>
+        <form class="form-input-area" [formGroup]="recipeCookingGroup" *ngFor="let cook of recipeCookingGroup.controls;index as i">
+            <div style="display: inline-block;">
+                <b>Step {{i+1}}:</b>
+                <mat-form-field class="textarea-field">
+                    <mat-label>Instructions</mat-label>
+                    <textarea matInput [formControlName]='i'></textarea>
+                </mat-form-field>
+                <button class="removal-button" mat-stroked-button color="error" (click)="removeCooking(i)">Remove Step {{i+1}}</button>
+            </div>
+        </form>
+        <button mat-stroked-button color="primary" (click)="addCookingInstruction()">Add Preparation Instruction</button>
+        <button mat-stroked-button color="primary" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Recipe in JSON</ng-template>
+        <button mat-stroked-button color="primary" [cdkCopyToClipboard]="getRecipeAsJson()">Copy to Clipboard</button>
+        <button mat-stroked-button color="primary" (click)="stepper.reset()">Reset</button>
+        <div>
+            {{getRecipeAsJson()}}
+        </div>
+    </mat-step>
+</mat-vertical-stepper>
