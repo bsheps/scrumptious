@@ -1,8 +1,8 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RecipeI, IngredientI } from 'src/interfaces/recipe-interface';
 import { HttpClient } from '@angular/common/http';
-import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
-
+import { MatDialog } from '@angular/material/dialog';
+import { GroceryListDialog } from '../grocerylistdialog/grocerylistdialog.component';
 
 @Component({
   selector: 'app-recipe-list',
@@ -45,46 +45,6 @@ export class RecipeListComponent implements OnInit {
   }
   clearGroceryList():void{
     this.groceryList = [];
-  }
-}
-
-@Component({
-  template: `
-    <h1 mat-dialog-title>Grocery List </h1>
-    <div mat-dialog-content>
-      <h2>Cold</h2>
-      <ul>
-        <li *ngFor="let ing of cold">{{ing.name}} - {{ing.amount}} {{ing.unit}}</li>
-      </ul>
-      <h2>Dry</h2>
-      <ul>
-        <li *ngFor="let ing of dry">{{ing.name}} - {{ing.amount}} {{ing.unit}}</li>
-      </ul>
-      <h2>Frozen</h2>
-      <ul>
-        <li *ngFor="let ing of frozen">{{ing.name}} - {{ing.amount}} {{ing.unit}}</li>
-      </ul>
-      <h2>Produce</h2>
-      <ul>
-        <li *ngFor="let ing of produce">{{ing.name}} - {{ing.amount}} {{ing.unit}}</li>
-      </ul>
-    </div>
-    <div mat-dialog-actions>
-      <button mat-stroked-button color="primary" (click)="dialog.close()">Close</button>
-    </div>
-  `
-})
-export class GroceryListDialog{
-  cold:IngredientI[]=[];
-  dry:IngredientI[] =[];
-  frozen:IngredientI[]=[];
-  produce:IngredientI[]=[];
-  constructor(public dialog: MatDialogRef<GroceryListDialog>, @Inject(MAT_DIALOG_DATA) private data){
-    console.log("data: ", data);
-    this.cold = this.cold.concat(data.filter(x =>x.type ==='cold'));
-    this.dry = this.dry.concat(data.filter(x => x.type === 'dry'));
-    this.frozen = this.frozen.concat(data.filter(x=>x.type==='frozen'));
-    this.produce = this.frozen.concat(data.filter(x=>x.type==='produce'));
   }
 }
 

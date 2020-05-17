@@ -9,7 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { MainContentDirective } from './anchor-directives/main-content.directive';
-import { RecipeListComponent, GroceryListDialog } from './recipe-list/recipe-list.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { RecipeCreatorComponent } from './recipe-creator/recipe-creator.component';
@@ -21,6 +21,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
+import { GroceryListDialog } from './grocerylistdialog/grocerylistdialog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MainContentDirective,
     RecipeListComponent,
     RecipeCreatorComponent,
-    GroceryListDialog
+    GroceryListDialog,
   ],
   imports: [
     BrowserModule,
