@@ -16,7 +16,7 @@
     </div>
     <div class="recipe-list-section">
         <ul>
-            <li *ngFor="let recipe of recipes" (click)="openRecipe(recipe)">{{recipe.name}}</li>
+            <li style="cursor: pointer;" *ngFor="let recipe of recipes" (click)="openRecipe(recipe)">{{recipe.name}}</li>
         </ul>
     </div>
     <div class="recipe-details-section">
