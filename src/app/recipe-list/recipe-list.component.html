@@ -6,7 +6,7 @@
             *ngFor="let recipe of groceryList; index as i" 
             color="accent" 
             [removable]="true"
-            (removed)="groceryList.splice(i)">
+            (removed)="groceryList.splice(i,1)">
             {{recipe.name}}
             <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>
