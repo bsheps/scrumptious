@@ -50,19 +50,25 @@ export class RecipeCreatorComponent implements OnInit {
     this.recipeIngredientsGroup.push(this.addIngredientFormGroup());
   }
   removeIngredient(index:number):void{
-    this.recipeIngredientsGroup.removeAt(index);
+    if(confirm('Remove?')){
+      this.recipeIngredientsGroup.removeAt(index);
+    }
   }
   addPrepration():void{
     this.recipePreparationGroup.push(this.addPreparationFormControl());
   }
   removePreparation(index:number):void{
-    this.recipePreparationGroup.removeAt(index);
+    if(confirm('Remove?')){
+      this.recipePreparationGroup.removeAt(index);
+    }
   }
   addCookingInstruction():void{
     this.recipeCookingGroup.push(this.addCookingFormControl());
   }
   removeCooking(index):void{
-    this.recipeCookingGroup.removeAt(index);
+    if(confirm('Remove?')){
+      this.recipeCookingGroup.removeAt(index);
+    }
   }
   getRecipeAsJson():string{
     return `{"name":${JSON.stringify(this.recipeNameGroup.value)},"preparation":${JSON.stringify(this.recipePreparationGroup.value)},"cooking":${JSON.stringify(this.recipeCookingGroup.value)},"ingredientList":${JSON.stringify(this.recipeIngredientsGroup.value)}}`;
