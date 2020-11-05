@@ -3,6 +3,7 @@ import { MainContentDirective } from '../anchor-directives/main-content.directiv
 import { RecipeListComponent } from '../recipe-list/recipe-list.component';
 import { RecipeCreatorComponent } from '../recipe-creator/recipe-creator.component';
 import { RecipeI } from 'src/interfaces/recipe-interface';
+import { WelcomeComponent } from '../welcome-component/welcome-component.component';
 
 @Component({
   selector: 'app-navigation-component',
@@ -15,6 +16,7 @@ export class NavigationComponentComponent implements OnInit {
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
+    this.openWelcome();
   }
 
   openRecipeList(): void {
@@ -37,5 +39,11 @@ export class NavigationComponentComponent implements OnInit {
     const componentRef = viewContainerRef.createComponent(componentFactory);
     componentRef.instance.recipe = recipe ? recipe : undefined;
   }
+  openWelcome(){
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(WelcomeComponent);
 
+    const viewContainerRef = this.appMainContent.viewContainerRef;
+    viewContainerRef.clear();
+
+    const componentRef = viewContainerRef.createComponent(componentFactory);  }
 }

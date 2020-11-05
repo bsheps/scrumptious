@@ -22,6 +22,7 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
 import { GroceryListDialog } from './grocerylistdialog/grocerylistdialog.component';
+import { WelcomeComponent } from './welcome-component/welcome-component.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { GroceryListDialog } from './grocerylistdialog/grocerylistdialog.compone
     RecipeListComponent,
     RecipeCreatorComponent,
     GroceryListDialog,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
 <mat-drawer-container class="example-container">
     <mat-drawer class="drawer" mode="over" #drawer>
         <ul>
+            <li style="cursor: pointer;" (click)="openWelcome();drawer.toggle()">Welcome</li>
             <li style="cursor: pointer;" (click)="openRecipeList();drawer.toggle()">Recipes</li>
-            <li style="cursor: pointer;" (click)="openRecipeCreator();drawer.toggle()">Create recipe json</li>
+            <li style="cursor: pointer;" (click)="openRecipeCreator();drawer.toggle()">Create recipe</li>
         </ul>
     </mat-drawer>
     <mat-drawer-content>
