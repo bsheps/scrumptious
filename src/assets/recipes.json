@@ -447,5 +447,6 @@
                 "type": "produce"
             }
         ]
-    }
+    },
+  {"name":" Sweet Tomato Sauce","preparation":["Dice onion into small pieces"],"cooking":["Heat olive oil and butter in pan on med-high heat, until butter is melted and stops foaming","Add onion and cook on med-high until soft (3 mins) (do not caramelize)","Add minced garlic, oregano, and pinch of red pepper flakes. Cook until aromatic.(1 min)","Break up tomatoes with your hands into manageable chunks and add to pot. Doesn't need to be perfect, you can always use spoon to break up further if chunks are too big.","Bring to boil and simmer til proper consistency. Stirring occasionally. Salt to taste. (around 30 mins)"],"ingredientList":[{"name":"olive oil","amount":2,"unit":"tbsp","type":"dry"},{"name":"butter","amount":2,"unit":"tbsp","type":"cold"},{"name":"Sweet onion","amount":1,"unit":"count","type":"produce"},{"name":"garlic clove","amount":2,"unit":"count","type":"produce"},{"name":"Whole tomato canned","amount":28,"unit":"ounce","type":"dry"},{"name":"dried oregano","amount":0.5,"unit":"tsp","type":"dry"},{"name":"red pepper flake","amount":1,"unit":"count","type":"dry"},{"name":"salt","amount":1,"unit":"count","type":"dry"}]}
 ]
