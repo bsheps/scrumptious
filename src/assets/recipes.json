@@ -27,6 +27,12 @@
                 "amount": 4
             },
             {
+                "name": "butternut squash",
+                "type": "produce",
+                "unit": "count",
+                "amount": 1
+            },
+            {
                 "name": "leek",
                 "type": "produce",
                 "unit": "count",
